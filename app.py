@@ -17,123 +17,89 @@ CODIGOS_ACCESO = {
     "EXCELSO99": {"plan": "PRO", "limite": 999999},
 }
 
-ENCICLOPEDIA_COMPLETA = {
-    "tecnologia": {
-        "titulo": "Tecnología",
-        "definicion": (
-            "La tecnología es el conjunto de conocimientos científicos, técnicas, métodos, herramientas "
-            "y sistemas creados por el ser humano para resolver problemas prácticos, mejorar procesos, "
-            "optimizar recursos y transformar la forma en que trabajamos, nos comunicamos y producimos. "
-            "Abarca desde el hardware y el software hasta la ingeniería energética, las telecomunicaciones "
-            "y la automatización industrial."
+IDIOMAS_20 = [
+    ("es", "Español"),
+    ("en", "English (Inglés)"),
+    ("zh", "中文 (Chino mandarín)"),
+    ("hi", "हिन्दी (Hindi)"),
+    ("ar", "العربية (Árabe)"),
+    ("bn", "বাংলা (Bengalí)"),
+    ("pt", "Português"),
+    ("ru", "Русский (Ruso)"),
+    ("ja", "日本語 (Japonés)"),
+    ("pa", "ਪੰਜਾਬੀ / پنجابی (Panyabí)"),
+    ("de", "Deutsch (Alemán)"),
+    ("jv", "Basa Jawa (Javanés)"),
+    ("ko", "한국어 (Coreano)"),
+    ("fr", "Français (Francés)"),
+    ("te", "తెలుగు (Telugu)"),
+    ("mr", "मराठी (Maratí)"),
+    ("tr", "Türkçe (Turco)"),
+    ("ta", "தமிழ் (Tamil)"),
+    ("vi", "Tiếng Việt (Vietnamita)"),
+    ("it", "Italiano"),
+]
+
+RESPUESTAS_NATURALES = {
+    "messi": {
+        "titulo": "Lionel Messi",
+        "concepto": (
+            "Lionel Andrés Messi es un futbolista argentino considerado por millones de aficionados y "
+            "analistas como uno de los mejores jugadores en la historia del fútbol. Destaca por su visión "
+            "de juego, regate en espacios reducidos, precisión en el pase y capacidad goleadora y de "
+            "asistencia durante más de dos décadas al máximo nivel. Ha ganado títulos de clubes, torneos "
+            "continentales y la Copa del Mundo con Argentina, además de múltiples premios individuales."
         ),
         "ejemplo": (
-            "Ejemplo práctico: Reestructurar un programa para que consuma menos memoria y energía "
-            "mientras procesa miles de datos más rápido, o usar sensores automatizados en una planta "
-            "para detectar fallas antes de que ocurran."
+            "En la práctica: Su nombre suele protagonizar análisis sobre récords históricos, "
+            "estadísticas de goles y asistencias, y rendimiento en torneos internacionales."
+        ),
+    },
+    "tecnologia": {
+        "titulo": "Tecnología",
+        "concepto": (
+            "La tecnología reúne herramientas, técnicas, sistemas y conocimientos aplicados para resolver "
+            "problemas reales, optimizar procesos y crear soluciones en software, energía, comunicaciones "
+            "e industria."
+        ),
+        "ejemplo": (
+            "En la práctica: Permite automatizar cálculos, mejorar el rendimiento de aplicaciones web "
+            "y reducir consumos energéticos en procesos digitales."
         ),
     },
     "programacion": {
         "titulo": "Programación",
-        "definicion": (
-            "La programación es el proceso de escribir, estructurar, probar y mantener instrucciones "
-            "lógicas mediante un lenguaje de programación (como Python) para que un sistema informático "
-            "procese información, tome decisiones condicionales, repita tareas, maneje bases de datos y "
-            "construya aplicaciones web, móviles o de escritorio."
+        "concepto": (
+            "La programación consiste en escribir instrucciones claras y ordenadas en un lenguaje como "
+            "Python para que un sistema procese datos, ejecute lógica, construya aplicaciones y "
+            "automatice tareas."
         ),
         "ejemplo": (
-            "Ejemplo práctico: Crear un script en Python que reciba una lista de precios o registros, "
-            "calcule totales, promedios y máximos, ordene los resultados y los guarde en un archivo CSV."
+            "En la práctica: Con un script puedes procesar listas, calcular estadísticas, ordenar "
+            "información o servir una aplicación web en Flask."
         ),
     },
     "petroleo": {
-        "titulo": "Petróleo y Geología del Hidrocarburo",
-        "definicion": (
-            "El petróleo es una mezcla compleja de hidrocarburos (compuestos principalmente de carbono "
-            "e hidrógeno) formada en el subsuelo durante millones de años a partir de materia orgánica "
-            "bajo condiciones específicas de presión y temperatura. En geología petrolera se estudia "
-            "la cuenca sedimentaria, la roca generadora, la migración, la roca reservorio (porosidad y "
-            "permeabilidad), la roca sello, las trampas estructurales o estratigráficas y propiedades "
-            "como la gravedad API y la viscosidad."
+        "titulo": "Petróleo y geología",
+        "concepto": (
+            "El petróleo es una mezcla natural de hidrocarburos formada en el subsuelo a partir de "
+            "materia orgánica bajo presión y temperatura. En geología del petróleo se estudian cuencas "
+            "sedimentarias, rocas generadoras, rocas reservorio, trampas, roca sello y gravedad API."
         ),
         "ejemplo": (
-            "Ejemplo práctico: Comparar un crudo liviano o mediano con un crudo pesado o extrapesado "
-            "mediante su gravedad API para determinar su flujo en tuberías, dilución o refinación."
+            "En la práctica: La gravedad API indica la densidad del crudo y ayuda a orientar su "
+            "manejo, transporte y refinación."
         ),
     },
-    "base de datos": {
-        "titulo": "Base de datos",
-        "definicion": (
-            "Una base de datos es un conjunto organizado y estructurado de registros o información "
-            "almacenada de manera que pueda consultarse, ordenarse, filtrarse, actualizarse, "
-            "eliminarse o exportarse de forma rápida y ordenada según distintos criterios (nombre, "
-            "fecha, valor, categoría o código)."
+    "excel": {
+        "titulo": "Hojas de cálculo y Excel",
+        "concepto": (
+            "Una hoja de cálculo organiza datos en filas y columnas formando celdas que admiten "
+            "texto, números o fórmulas para calcular totales, promedios, comparaciones y ordenamientos."
         ),
         "ejemplo": (
-            "Ejemplo práctico: Reunir 100 filas con producto, valor y fecha y ordenarlas de mayor a "
-            "menor valor o por fecha para detectar los picos de movimiento."
-        ),
-    },
-    "hoja de calculo": {
-        "titulo": "Hoja de cálculo",
-        "definicion": (
-            "Una hoja de cálculo es una cuadrícula interactiva formada por columnas (A, B, C...) y "
-            "filas (1, 2, 3...) que se intersectan en celdas. Cada celda puede almacenar texto, "
-            "números o fórmulas que recalculan valores automáticamente cuando cambian los datos de "
-            "entrada, además de permitir ordenar tablas, graficar series e imprimir reportes."
-        ),
-        "ejemplo": (
-            "Ejemplo práctico: En la columna B poner cantidades, en la C precios unitarios, en D "
-            "multiplicar =B1*C1 y en una celda final escribir =SUMA(D1:D10) para obtener el total."
-        ),
-    },
-    "inteligencia artificial": {
-        "titulo": "Inteligencia Artificial",
-        "definicion": (
-            "La inteligencia artificial es el campo de la informática dedicado a crear sistemas capaces "
-            "de realizar tareas que normalmente requieren razonamiento, reconocimiento de patrones, "
-            "análisis de datos, clasificación, predicción o procesamiento de lenguaje."
-        ),
-        "ejemplo": (
-            "Ejemplo práctico: Un modelo que analiza patrones repetitivos en datos o texto para "
-            "clasificar información, resumir contenidos o detectar anomalías."
-        ),
-    },
-    "futbol": {
-        "titulo": "Fútbol",
-        "definicion": (
-            "El fútbol es un deporte colectivo en el que dos equipos de once jugadores compiten por "
-            "marcar más goles en la portería contraria usando principalmente los pies y el cuerpo "
-            "(excepto el portero dentro de su área). Combina técnica individual, resistencia física, "
-            "lectura espacial y organización táctica en ataque y defensa."
-        ),
-        "ejemplo": (
-            "Ejemplo práctico: Alternar posesión paciente para atraer la presión rival con pases "
-            "verticales rápidos hacia los espacios libres cuando el bloque contrario se desordena."
-        ),
-    },
-    "economia": {
-        "titulo": "Economía",
-        "definicion": (
-            "La economía es la ciencia social que estudia cómo las personas, empresas y gobiernos "
-            "administran recursos limitados para producir, distribuir y consumir bienes y servicios, "
-            "analizando precios, oferta, demanda, costos, inversión y crecimiento."
-        ),
-        "ejemplo": (
-            "Ejemplo práctico: Calcular el costo unitario, el margen de ganancia y el punto de "
-            "equilibrio de un producto antes de fijar su precio de venta."
-        ),
-    },
-    "ciencia": {
-        "titulo": "Ciencia",
-        "definicion": (
-            "La ciencia es el sistema ordenado de conocimiento basado en la observación, la medición, "
-            "la experimentación y la comprobación lógica para explicar cómo funcionan los fenómenos "
-            "naturales, físicos, químicos, biológicos o matemáticos."
-        ),
-        "ejemplo": (
-            "Ejemplo práctico: Formular una hipótesis sobre cómo influye una variable en un proceso, "
-            "probarla con mediciones controladas y analizar los resultados obtenidos."
+            "En la práctica: Puedes escribir =B1*C1 por fila y usar =SUMA(D1:D5), =PROMEDIO(C1:C5) "
+            "o =SI(D1>=E1;\"Cumple\";\"Ajustar\")."
         ),
     },
 }
@@ -150,36 +116,30 @@ def _col_letra(idx):
 
 def construir_30_noticias():
     temas = [
-        ("Tecnología", "N-Tech", "Eficiencia energética y cálculo computacional", "Reseña: Avances en optimización de software, hardware y ahorro energético en procesamiento de datos.", "eficiencia energetica computacion software"),
-        ("Geología", "N-Geo", "Cuencas sedimentarias, trampas y gravedad API", "Reseña: Análisis sobre sistemas petroleros, yacimientos, porosidad y comportamiento del crudo.", "geologia petroleo cuencas sedimentarias"),
-        ("Programación", "N-Dev", "Python, Flask y sistemas web rápidos", "Reseña: Aplicaciones web, scripts automatizados, manejo de datos y desarrollo ágil.", "python flask programacion web"),
-        ("Deportes", "N-Fut", "Fútbol mundial, marcas históricas y táctica", "Reseña: Cobertura de partidos, récords goleadores, rendimiento y análisis de equipos.", "futbol internacional goles tactica"),
-        ("Ciencia", "N-Sci", "Física, astronomía y experimentos actuales", "Reseña: Novedades científicas, astrofísica, energía y descubrimientos recientes.", "ciencia astronomia fisica"),
-        ("Economía", "N-Eco", "Mercados, producción y tecnología aplicada", "Reseña: Movimientos económicos, productividad, inversión y transformación digital.", "economia mercados tecnologia"),
+        ("Tecnología", "N-Tech", "Eficiencia energética y cálculo computacional", "Avances orientados a reducir el consumo eléctrico y mejorar el rendimiento en sistemas digitales.", "eficiencia energetica computacion tecnologia"),
+        ("Deportes", "N-Fut", "Fútbol mundial, récords y rendimiento competitivo", "Seguimiento de figuras, marcas históricas, torneos y análisis táctico del fútbol actual.", "futbol mundial records goles"),
+        ("Geología", "N-Geo", "Cuencas sedimentarias, gravedad API y yacimientos", "Novedades sobre exploración, caracterización de reservorios y dinámica energética.", "geologia petroleo yacimientos api"),
+        ("Programación", "N-Dev", "Python, desarrollo web y automatización", "Tendencias en aplicaciones web, estructuras de datos y optimización de código.", "python desarrollo web programacion"),
+        ("Ciencia", "N-Sci", "Ciencia, espacio y física aplicada", "Descubrimientos recientes, observaciones astronómicas y experimentos destacados.", "ciencia astronomia fisica"),
+        ("Economía", "N-Eco", "Mercados, innovación y actividad productiva", "Panorama económico, transformación digital y movimientos clave en distintos sectores.", "economia innovacion mercados"),
     ]
-    enfoques = [
-        "análisis principal",
-        "reporte actual",
-        "claves técnicas",
-        "panorama general",
-        "resumen del día",
-    ]
-    out = []
+    enfoques = ["panorama actual", "análisis detallado", "puntos clave", "actualización del día", "enfoque práctico"]
+    noticias = []
     for i in range(30):
         cat, logo, tit, res, q = temas[i % len(temas)]
         enf = enfoques[i % len(enfoques)]
         num = i + 1
-        out.append({
+        noticias.append({
             "num": num,
             "logo": logo,
-            "titulo": f"#{num:02d} · {tit} — {enf}",
+            "titulo": f"#{num:02d} · {tit} ({enf})",
             "categoria": cat,
             "fuente": f"Google Noticias · {cat}",
             "fecha": "Hoy",
             "resena": f"{res} ({enf.capitalize()}).",
             "url": f"https://news.google.com/search?q={urllib.parse.quote_plus(q + ' ' + enf)}",
         })
-    return out
+    return noticias
 
 
 def construir_30_videos():
@@ -190,38 +150,38 @@ def construir_30_videos():
     ]
     temas = [
         ("Tendencias virales y clips destacados", "tendencias virales"),
-        ("Programación en Python y desarrollo web", "python programacion web"),
-        ("Geología del petróleo y yacimientos", "geologia petroleo"),
-        ("Fútbol, goles y análisis táctico", "futbol goles analisis"),
-        ("Matemática y lógica práctica", "matematicas logica"),
-        ("Ciencia y astronomía", "ciencia astronomia"),
-        ("Bases de datos y hojas de cálculo", "bases de datos hoja de calculo"),
-        ("Tecnología y productividad", "tecnologia productividad"),
-        ("Diseño y estética oscura", "diseño oscuro ui"),
-        ("Emprendimiento y software", "emprendimiento software"),
+        ("Fútbol, jugadas y análisis", "futbol jugadas analisis"),
+        ("Programación en Python y proyectos", "python programacion proyectos"),
+        ("Geología del petróleo y yacimientos", "geologia petroleo yacimientos"),
+        ("Hojas de cálculo y fórmulas prácticas", "hoja de calculo formulas"),
+        ("Tecnología y novedades digitales", "tecnologia novedades"),
+        ("Ciencia, astronomía y experimentos", "ciencia astronomia"),
+        ("Matemática y resolución rápida", "matematicas logica"),
+        ("Diseño de interfaces y estética", "diseño ui web"),
+        ("Productividad y software", "productividad software"),
     ]
-    out = []
+    videos = []
     for i in range(30):
         plat, cat, base_u = plataformas[i % len(plataformas)]
         tit, q = temas[i % len(temas)]
         num = i + 1
         url = base_u if plat == "Instagram" else f"{base_u}{urllib.parse.quote_plus(q + ' ' + str(num))}"
-        out.append({
+        videos.append({
             "num": num,
             "titulo": f"#{num:02d} · {tit}",
             "plataforma": plat,
             "categoria": cat,
-            "resena": f"Acceso directo a {plat} para '{q}'.",
+            "resena": f"Explorar '{q}' en {plat}.",
             "url": url,
         })
-    return out
+    return videos
 
 
 NOTICIAS_30 = construir_30_noticias()
 VIDEOS_30 = construir_30_videos()
 
 HTML_TEMPLATE = """<!DOCTYPE html>
-<html lang="es">
+<html lang="{{ idioma }}">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -231,29 +191,29 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     :root {
       --bg: #07070c;
       --panel: #11111a;
-      --panel-2: #181826;
-      --border: #2a2a3e;
-      --text: #f5f5fc;
-      --muted: #a4a4ba;
-      --accent: #e11d48;
-      --accent-soft: rgba(225, 29, 72, 0.16);
+      --panel-2: #171722;
+      --border: #282838;
+      --text: #f4f4fa;
+      --muted: #9e9eb4;
+      --accent: {{ acento_hex }};
+      --accent-soft: rgba(225, 29, 72, 0.14);
       --ok: #10b981;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: radial-gradient(circle at top, #1f0812 0%, var(--bg) 52%);
+      background: radial-gradient(circle at top, #1b0911 0%, var(--bg) 52%);
       color: var(--text);
       min-height: 100vh;
     }
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 14px 12px 56px; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 14px 12px 56px; }
     .login-box {
       max-width: 420px;
       margin: 56px auto;
       background: var(--panel);
       border: 1px solid var(--accent);
-      box-shadow: 0 0 34px rgba(225, 29, 72, 0.22);
+      box-shadow: 0 0 30px rgba(225, 29, 72, 0.2);
       border-radius: 16px;
       padding: 24px;
       text-align: center;
@@ -278,7 +238,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       border-radius: 10px;
       padding: 9px 13px;
       font-weight: 600;
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       transition: transform 0.1s ease, background 0.15s ease;
     }
     button:active { transform: scale(0.98); }
@@ -311,11 +271,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       font-size: 0.75rem;
       background: var(--accent-soft);
       color: #fda4af;
-      border: 1px solid rgba(225, 29, 72, 0.38);
+      border: 1px solid rgba(225, 29, 72, 0.35);
     }
     .nav-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(126px, 1fr));
       gap: 7px;
       margin-bottom: 14px;
     }
@@ -325,7 +285,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       border: 1px solid var(--border);
       text-align: left;
       padding: 9px 11px;
-      font-size: 0.83rem;
+      font-size: 0.82rem;
     }
     .mod-btn.active { background: var(--accent-soft); border-color: var(--accent); color: #fff; }
     .mod-panel {
@@ -358,15 +318,25 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       height: 28px;
       padding: 0 8px;
       border-radius: 8px;
-      background: linear-gradient(135deg, #e11d48, #9f1239);
+      background: linear-gradient(135deg, var(--accent), #881337);
       color: #fff;
       font-weight: 800;
       font-size: 0.75rem;
     }
-    .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 10px; margin: 12px 0; }
-    .stat-box { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 11px; }
-    .stat-label { font-size: 0.75rem; color: var(--muted); }
-    .stat-val { font-size: 1.18rem; font-weight: 700; margin-top: 4px; }
+    .stat-mini-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      padding: 10px 14px;
+      margin: 12px 0;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.84rem;
+    }
+    .stat-mini-item { display: inline-flex; gap: 6px; align-items: baseline; }
+    .stat-mini-lbl { color: var(--muted); font-size: 0.78rem; }
+    .stat-mini-val { font-weight: 700; color: var(--text); }
     pre {
       background: var(--bg);
       border: 1px solid var(--border);
@@ -376,18 +346,68 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       font-size: 0.85rem;
       color: #e2e8f0;
     }
-    .table-wrap { overflow-x: auto; max-height: 460px; overflow-y: auto; border: 1px solid var(--border); border-radius: 10px; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
-    th, td { border: 1px solid var(--border); padding: 5px 6px; text-align: left; }
-    th { background: var(--panel-2); position: sticky; top: 0; z-index: 2; }
-    .row-num { background: var(--panel-2); font-weight: 700; text-align: center; min-width: 38px; color: var(--muted); }
-    .sheet-input {
-      width: 100%;
-      min-width: 96px;
+    /* Barra de fórmulas tipo Excel */
+    .formula-bar {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 8px 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    .cell-box-name {
+      min-width: 56px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.84rem;
+      padding: 6px 8px;
+      border-radius: 8px;
+      background: var(--bg);
+      border: 1px solid var(--accent);
+      color: #fda4af;
+    }
+    .formula-bar input {
+      flex: 1 1 220px;
       margin-bottom: 0;
-      padding: 5px 7px;
+      padding: 7px 10px;
+      font-size: 0.86rem;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      max-height: 490px;
+      overflow-y: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      user-select: none;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    th, td { border: 1px solid var(--border); padding: 0; text-align: left; }
+    th { background: var(--panel-2); position: sticky; top: 0; z-index: 2; padding: 4px 5px; }
+    .row-num { background: var(--panel-2); font-weight: 700; text-align: center; min-width: 36px; padding: 4px; color: var(--muted); }
+    td.selected-cell {
+      background: rgba(59, 130, 246, 0.22);
+      box-shadow: inset 0 0 0 2px #60a5fa;
+    }
+    td.active-cell {
+      box-shadow: inset 0 0 0 2px var(--accent);
+    }
+    .sheet-cell {
+      width: 100%;
+      min-width: 98px;
+      margin-bottom: 0;
+      padding: 6px 7px;
       font-size: 0.82rem;
-      border-radius: 6px;
+      border-radius: 0;
+      border: none;
+      background: transparent;
+      color: var(--text);
+    }
+    .sheet-cell:focus {
+      outline: none;
+      background: var(--bg);
     }
     .alert-err {
       background: rgba(239, 68, 68, 0.16);
@@ -413,12 +433,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     a { color: #fb7185; text-decoration: none; }
     a:hover { text-decoration: underline; }
     @media print {
-      .topbar, .nav-grid, .btn-secondary, .btn-primary, form { display: none !important; }
+      .topbar, .nav-grid, .btn-secondary, .btn-primary, .formula-bar, form { display: none !important; }
       body { background: #fff; color: #000; }
       .mod-panel { border: none; background: #fff; color: #000; padding: 0; }
       .table-wrap { max-height: none; overflow: visible; border: none; }
       table, th, td { border: 1px solid #444; color: #000; }
-      input.sheet-input { border: none; color: #000; background: transparent; }
+      input.sheet-cell { border: none; color: #000; background: transparent; }
     }
   </style>
 </head>
@@ -440,10 +460,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   {% else %}
     <div class="topbar">
       <div>
-        <strong>C-PRE2</strong> <span class="badge">Código: {{ codigo }} · {{ plan }}</span>
+        <strong>C-PRE2</strong> <span class="badge">{{ codigo }} · {{ plan }}</span>
       </div>
       <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-        <span class="badge">Uso: {{ uso }} / {{ limite }}</span>
+        <span class="badge">{{ idioma_nombre }}</span>
+        <span class="badge">{{ uso }} / {{ limite }}</span>
         <a class="btn-secondary" style="padding:7px 11px; border-radius:10px;" href="/">Salir</a>
       </div>
     </div>
@@ -457,167 +478,140 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     <div class="nav-grid" id="navRenglones">
       <button type="button" class="mod-btn {% if active_mod == 'm1' %}active{% endif %}" onclick="openMod('m1', this)">1. Programar</button>
-      <button type="button" class="mod-btn {% if active_mod == 'm2' %}active{% endif %}" onclick="openMod('m2', this)">2. Base de datos</button>
-      <button type="button" class="mod-btn {% if active_mod == 'm3' %}active{% endif %}" onclick="openMod('m3', this)">3. Ordenar y graficar</button>
+      <button type="button" class="mod-btn {% if active_mod == 'm2' %}active{% endif %}" onclick="openMod('m2', this)">2. Crear base</button>
+      <button type="button" class="mod-btn {% if active_mod == 'm3' %}active{% endif %}" onclick="openMod('m3', this)">3. Ordenar</button>
       <button type="button" class="mod-btn {% if active_mod == 'm4' %}active{% endif %}" onclick="openMod('m4', this)">4. Hoja de cálculo</button>
       <button type="button" class="mod-btn {% if active_mod == 'm5' %}active{% endif %}" onclick="openMod('m5', this)">5. Noticias (30)</button>
       <button type="button" class="mod-btn {% if active_mod == 'm6' %}active{% endif %}" onclick="openMod('m6', this)">6. Videos (30)</button>
-      <button type="button" class="mod-btn {% if active_mod == 'm7' %}active{% endif %}" onclick="openMod('m7', this)">7. Enciclopedia / Web</button>
-      <button type="button" class="mod-btn {% if active_mod == 'm8' %}active{% endif %}" onclick="openMod('m8', this)">8. Estado</button>
+      <button type="button" class="mod-btn {% if active_mod == 'm7' %}active{% endif %}" onclick="openMod('m7', this)">7. Buscador web</button>
+      <button type="button" class="mod-btn {% if active_mod == 'm8' %}active{% endif %}" onclick="openMod('m8', this)">8. Ajustes</button>
     </div>
 
     <!-- 1. PROGRAMAR -->
     <section id="m1" class="mod-panel {% if active_mod != 'm1' %}hidden{% endif %}">
       <h2>1. Programar en Python</h2>
-      <p style="color:var(--muted)">Escribe tu script en Python y ejecuta para ver los resultados en pantalla.</p>
+      <p style="color:var(--muted)">Escribe tu script en Python y ejecuta para ver los resultados.</p>
       <form method="POST">
         <input type="hidden" name="codigo" value="{{ codigo }}" />
         <input type="hidden" name="active_mod" value="m1" />
         <input type="hidden" name="accion" value="ejecutar_codigo" />
-        <label for="code_input">Escribe tu código Python aquí</label>
+        <label for="code_input">Código Python</label>
         <textarea id="code_input" name="code_input" rows="9">{{ code_input }}</textarea>
-        <button type="submit" class="btn-primary">Ejecutar código</button>
+        <button type="submit" class="btn-primary">Ejecutar script</button>
       </form>
       {% if code_output is not none %}
-        <h3>Resultados</h3>
+        <h3>Resultado</h3>
         <pre>{{ code_output }}</pre>
       {% endif %}
     </section>
 
-    <!-- 2. BASE DE DATOS GRANDE + ESPACIO AMPLIO DE TEXTO + AUTOMÁTICO / MANUAL -->
+    <!-- 2. CREAR BASE DE DATOS -->
     <section id="m2" class="mod-panel {% if active_mod != 'm2' %}hidden{% endif %}">
-      <h2>2. Base de datos grande (Manual y Automática)</h2>
-      <p style="color:var(--muted)">Escribe o pega tu texto o base de datos amplia aquí abajo, sube un archivo o ordénala en modo <strong>Manual</strong> o <strong>Automático</strong>.</p>
-
-      <form method="POST" class="card" style="margin-bottom:14px;">
-        <input type="hidden" name="codigo" value="{{ codigo }}" />
-        <input type="hidden" name="active_mod" value="m2" />
-        <input type="hidden" name="accion" value="cargar_lote_db" />
-        <label for="lote_db_texto">Escriba o pegue su texto o base de datos aquí (una fila por línea: Producto/Nombre, Valor, Categoría, Fecha)</label>
-        <textarea id="lote_db_texto" name="lote_db_texto" rows="9" placeholder="Escriba o pegue su texto aquí...&#10;Ejemplo:&#10;Producto A, 120, Ventas, 2026-11-20&#10;Producto B, 85, Inventario, 2026-11-18&#10;Producto C, 240, Ventas, 2026-11-21"></textarea>
-        <div class="grid-2">
-          <div>
-            <label for="modo_carga_db">Modo de carga</label>
-            <select id="modo_carga_db" name="modo_carga_db">
-              <option value="reemplazar">Reemplazar base actual</option>
-              <option value="agregar">Agregar a la base actual</option>
-            </select>
-          </div>
-          <div>
-            <label for="autollenar_n">Generar lote de prueba</label>
-            <select id="autollenar_n" name="autollenar_n">
-              <option value="0">No generar</option>
-              <option value="30">Generar 30 registros</option>
-              <option value="80">Generar 80 registros</option>
-            </select>
-          </div>
-        </div>
-        <button type="submit" class="btn-primary">Cargar en base de datos</button>
-      </form>
+      <h2>2. Crear base de datos</h2>
+      <p style="color:var(--muted)">Agrega filas, pega un lote o importa un archivo para crear tu base de datos.</p>
 
       <div class="grid-2">
-        <form method="POST" enctype="multipart/form-data" class="card">
-          <h3 style="margin-top:0">Importar archivo</h3>
+        <form method="POST" class="card">
+          <h3 style="margin-top:0">Nuevo registro</h3>
           <input type="hidden" name="codigo" value="{{ codigo }}" />
           <input type="hidden" name="active_mod" value="m2" />
-          <input type="hidden" name="accion" value="importar_archivo" />
-          <label for="archivo_db">Archivo (.csv, .txt, .json)</label>
-          <input id="archivo_db" name="archivo_db" type="file" accept=".csv,.txt,.json" required />
-          <button type="submit" class="btn-secondary" style="width:100%; justify-content:center;">Subir e importar</button>
+          <input type="hidden" name="accion" value="agregar_registro" />
+          <label for="db_nombre">Nombre / Producto</label>
+          <input id="db_nombre" name="db_nombre" type="text" placeholder="Ej: Producto A" required />
+          <label for="db_valor">Valor</label>
+          <input id="db_valor" name="db_valor" type="number" step="any" placeholder="Ej: 150" required />
+          <label for="db_categoria">Categoría</label>
+          <input id="db_categoria" name="db_categoria" type="text" placeholder="Ej: Ventas" />
+          <label for="db_fecha">Fecha</label>
+          <input id="db_fecha" name="db_fecha" type="date" />
+          <button type="submit" class="btn-primary">Guardar registro</button>
         </form>
 
         <form method="POST" class="card">
-          <h3 style="margin-top:0">Ordenar base de datos</h3>
+          <h3 style="margin-top:0">Pegar texto o lote</h3>
           <input type="hidden" name="codigo" value="{{ codigo }}" />
           <input type="hidden" name="active_mod" value="m2" />
-          <input type="hidden" name="accion" value="ordenar_db" />
-          <label for="db_modo_orden">Modo</label>
-          <select id="db_modo_orden" name="db_modo_orden">
-            <option value="manual" {% if db_modo_orden == 'manual' %}selected{% endif %}>Manual</option>
-            <option value="auto" {% if db_modo_orden == 'auto' %}selected{% endif %}>Automático</option>
+          <input type="hidden" name="accion" value="cargar_lote_db" />
+          <label for="lote_db_texto">Filas (Nombre, Valor, Categoría, Fecha)</label>
+          <textarea id="lote_db_texto" name="lote_db_texto" rows="5" placeholder="Escriba o pegue aquí..."></textarea>
+          <label for="modo_carga_db">Modo</label>
+          <select id="modo_carga_db" name="modo_carga_db">
+            <option value="agregar">Agregar</option>
+            <option value="reemplazar">Reemplazar</option>
           </select>
-          <label for="db_sort_by">Campo (modo manual)</label>
-          <select id="db_sort_by" name="db_sort_by">
-            <option value="nombre" {% if db_sort_by == 'nombre' %}selected{% endif %}>Producto / Nombre</option>
-            <option value="fecha" {% if db_sort_by == 'fecha' %}selected{% endif %}>Fecha</option>
-            <option value="valor" {% if db_sort_by == 'valor' %}selected{% endif %}>Valor numérico</option>
-            <option value="categoria" {% if db_sort_by == 'categoria' %}selected{% endif %}>Categoría</option>
-          </select>
-          <label for="db_sort_dir">Sentido (modo manual)</label>
-          <select id="db_sort_dir" name="db_sort_dir">
-            <option value="asc" {% if db_sort_dir == 'asc' %}selected{% endif %}>Ascendente</option>
-            <option value="desc" {% if db_sort_dir == 'desc' %}selected{% endif %}>Descendente</option>
-          </select>
-          <button type="submit" class="btn-primary">Ordenar ahora</button>
+          <button type="submit" class="btn-primary">Cargar</button>
         </form>
       </div>
 
-      <div class="stat-grid">
-        <div class="stat-box"><div class="stat-label">Registros</div><div class="stat-val">{{ stats.count }}</div></div>
-        <div class="stat-box"><div class="stat-label">Suma</div><div class="stat-val">{{ stats.total }}</div></div>
-        <div class="stat-box"><div class="stat-label">Promedio</div><div class="stat-val">{{ stats.avg }}</div></div>
-        <div class="stat-box"><div class="stat-label">Máximo</div><div class="stat-val">{{ stats.max_val }}</div></div>
-      </div>
+      <form method="POST" enctype="multipart/form-data" class="card" style="margin-top:12px;">
+        <input type="hidden" name="codigo" value="{{ codigo }}" />
+        <input type="hidden" name="active_mod" value="m2" />
+        <input type="hidden" name="accion" value="importar_archivo" />
+        <label for="archivo_db">Importar archivo (.csv, .txt, .json)</label>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+          <input id="archivo_db" name="archivo_db" type="file" accept=".csv,.txt,.json" style="flex:1 1 220px; margin-bottom:0;" />
+          <button type="submit" class="btn-secondary">Importar</button>
+          <a class="btn-secondary" style="padding:9px 13px; border-radius:10px;" href="/descargar-csv?codigo={{ codigo }}">CSV</a>
+        </div>
+      </form>
 
-      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px;">
-        <a class="btn-secondary" style="padding:8px 12px; border-radius:10px;" href="/descargar-csv?codigo={{ codigo }}">Descargar CSV</a>
-        <form method="POST" style="display:inline; margin:0;">
-          <input type="hidden" name="codigo" value="{{ codigo }}" />
-          <input type="hidden" name="active_mod" value="m2" />
-          <input type="hidden" name="accion" value="limpiar_db" />
-          <button type="submit" class="btn-secondary">Vaciar base</button>
-        </form>
+      <div class="stat-mini-row">
+        <div class="stat-mini-item"><span class="stat-mini-lbl">Filas:</span><span class="stat-mini-val">{{ stats.count }}</span></div>
+        <div class="stat-mini-item"><span class="stat-mini-lbl">Suma:</span><span class="stat-mini-val">{{ stats.total }}</span></div>
+        <div class="stat-mini-item"><span class="stat-mini-lbl">Prom:</span><span class="stat-mini-val">{{ stats.avg }}</span></div>
+        <div class="stat-mini-item"><span class="stat-mini-lbl">Máx:</span><span class="stat-mini-val">{{ stats.max_val }}</span></div>
       </div>
 
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>#</th><th>Producto / Nombre</th><th>Valor</th><th>Categoría</th><th>Fecha</th><th>Acción</th></tr>
+            <tr><th style="padding:6px">#</th><th style="padding:6px">Nombre / Producto</th><th style="padding:6px">Valor</th><th style="padding:6px">Categoría</th><th style="padding:6px">Fecha</th><th style="padding:6px">Borrar</th></tr>
           </thead>
           <tbody>
             {% for r in registros %}
               <tr>
-                <td>{{ loop.index }}</td>
-                <td>{{ r.nombre }}</td>
-                <td>{{ r.valor }}</td>
-                <td>{{ r.categoria }}</td>
-                <td>{{ r.fecha }}</td>
-                <td>
+                <td style="padding:6px">{{ loop.index }}</td>
+                <td style="padding:6px">{{ r.nombre }}</td>
+                <td style="padding:6px">{{ r.valor }}</td>
+                <td style="padding:6px">{{ r.categoria }}</td>
+                <td style="padding:6px">{{ r.fecha }}</td>
+                <td style="padding:6px">
                   <form method="POST" style="display:inline; margin:0;">
                     <input type="hidden" name="codigo" value="{{ codigo }}" />
                     <input type="hidden" name="active_mod" value="m2" />
                     <input type="hidden" name="accion" value="borrar_fila" />
                     <input type="hidden" name="fila_idx" value="{{ loop.index0 }}" />
-                    <button type="submit" class="btn-secondary btn-small">Eliminar</button>
+                    <button type="submit" class="btn-secondary btn-small">Quitar</button>
                   </form>
                 </td>
               </tr>
             {% else %}
-              <tr><td colspan="6" style="color:var(--muted)">Sin registros cargados.</td></tr>
+              <tr><td colspan="6" style="padding:8px; color:var(--muted)">Sin registros.</td></tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
     </section>
 
-    <!-- 3. ORDENAR Y GRAFICAR -->
+    <!-- 3. ORDENAR -->
     <section id="m3" class="mod-panel {% if active_mod != 'm3' %}hidden{% endif %}">
       <h2>3. Ordenar y graficar</h2>
-      <p style="color:var(--muted)">Escriba o pegue aquí lo que desea ordenar (productos, fechas, palabras o números) y vea la gráfica.</p>
+      <p style="color:var(--muted)">Escribe lo que deseas ordenar (productos, fechas, palabras o números) y grafica el resultado.</p>
+
       <form method="POST">
         <input type="hidden" name="codigo" value="{{ codigo }}" />
         <input type="hidden" name="active_mod" value="m3" />
         <input type="hidden" name="accion" value="ordenar_custom" />
-        <label for="custom_items">Escriba o pegue su lista aquí</label>
+        <label for="custom_items">Elementos a ordenar</label>
         <textarea id="custom_items" name="custom_items" rows="5" placeholder="Escriba aquí lo que desea ordenar...">{{ custom_items }}</textarea>
         <div class="grid-2">
           <div>
             <label for="custom_tipo">Tipo</label>
             <select id="custom_tipo" name="custom_tipo">
               <option value="auto" {% if custom_tipo == 'auto' %}selected{% endif %}>Automático</option>
-              <option value="texto" {% if custom_tipo == 'texto' %}selected{% endif %}>Producto / Texto (A-Z)</option>
+              <option value="texto" {% if custom_tipo == 'texto' %}selected{% endif %}>Texto / Producto (A-Z)</option>
               <option value="fecha" {% if custom_tipo == 'fecha' %}selected{% endif %}>Fecha</option>
-              <option value="numero" {% if custom_tipo == 'numero' %}selected{% endif %}>Numérico</option>
+              <option value="numero" {% if custom_tipo == 'numero' %}selected{% endif %}>Número</option>
             </select>
           </div>
           <div>
@@ -630,64 +624,78 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
         <button type="submit" class="btn-primary">Ordenar y graficar</button>
       </form>
-      <p><strong>Resultado ordenado:</strong> {{ custom_resultado_str }}</p>
+
+      <div class="stat-mini-row">
+        <div class="stat-mini-item"><span class="stat-mini-lbl">Ordenado:</span><span class="stat-mini-val">{{ custom_resultado_str }}</span></div>
+      </div>
       <canvas id="chartCustom" height="105"></canvas>
     </section>
 
-    <!-- 4. HOJA DE CÁLCULO AMPLIA (COLUMNAS A-H, FILAS 1-15) -->
+    <!-- 4. HOJA DE CÁLCULO (SELECCIÓN DE CELDAS + RANGO + BARRA DE FÓRMULAS) -->
     <section id="m4" class="mod-panel {% if active_mod != 'm4' %}hidden{% endif %}">
-      <h2>4. Hoja de cálculo (Columnas A–{{ col_max_letra }} · Filas 1–{{ row_max_num }})</h2>
-      <p style="color:var(--muted)">Fórmulas soportadas: <code>=SUMA(B1:B10)</code>, <code>=PROMEDIO(B1:B10)</code>, <code>=MAX(B1:B10)</code>, <code>=MIN(B1:B10)</code>, <code>=CONTAR(B1:B10)</code>, <code>=REDONDEAR(C1;2)</code>, <code>=POTENCIA(B1;2)</code>, <code>=RAIZ(C1)</code>, <code>=SI(B1&gt;5;"Alto";"Bajo")</code> o <code>=B1*C1</code>.</p>
+      <h2>4. Hoja de cálculo ({{ col_max_letra }}1:{{ col_max_letra }}{{ row_max_num }})</h2>
+      <p style="color:var(--muted)">Haz clic o arrastra sobre las celdas para seleccionarlas como en Excel, edita en la barra de fórmulas o dentro de cada celda y usa fórmulas como <code>=SUMA(B1:B5)</code>, <code>=PROMEDIO(C1:C5)</code>, <code>=SI(D1&gt;=E1;"Cumple";"Ajustar")</code>.</p>
+
+      <div class="formula-bar">
+        <div id="activeCellRef" class="cell-box-name">A1</div>
+        <input id="formulaBarInput" type="text" placeholder="Selecciona una celda para ver o editar su valor o fórmula..." />
+        <button type="button" class="btn-secondary btn-small" onclick="aplicarFormulaBar()">Aplicar</button>
+        <button type="button" class="btn-secondary btn-small" onclick="copiarSeleccion()">Copiar</button>
+        <button type="button" class="btn-secondary btn-small" onclick="pegarSeleccion()">Pegar</button>
+      </div>
 
       <form method="POST" enctype="multipart/form-data">
         <input type="hidden" name="codigo" value="{{ codigo }}" />
         <input type="hidden" name="active_mod" value="m4" />
 
         <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px;">
-          <button type="submit" name="accion" value="sheet_calcular" class="btn-primary" style="width:auto;">Calcular fórmulas</button>
+          <button type="submit" name="accion" value="sheet_calcular" class="btn-primary" style="width:auto;">Calcular</button>
           <button type="submit" name="accion" value="sheet_add_row" class="btn-secondary">+ Fila</button>
           <button type="submit" name="accion" value="sheet_del_row" class="btn-secondary">- Fila</button>
-          <button type="submit" name="accion" value="sheet_add_col" class="btn-secondary">+ Columna</button>
-          <button type="submit" name="accion" value="sheet_del_col" class="btn-secondary">- Columna</button>
+          <button type="submit" name="accion" value="sheet_add_col" class="btn-secondary">+ Col</button>
+          <button type="submit" name="accion" value="sheet_del_col" class="btn-secondary">- Col</button>
           <button type="button" onclick="window.print()" class="btn-secondary">Imprimir</button>
         </div>
 
-        <div class="card" style="margin-bottom:12px;">
-          <label for="archivo_sheet">Cargar archivo a la hoja (.csv o .txt)</label>
-          <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
-            <input id="archivo_sheet" name="archivo_sheet" type="file" accept=".csv,.txt" style="flex:1 1 220px; margin-bottom:0;" />
-            <button type="submit" name="accion" value="sheet_import" class="btn-secondary">Cargar archivo</button>
-          </div>
-        </div>
-
         <div class="grid-2" style="margin-bottom:10px;">
-          <div>
-            <label for="sheet_sort_col">Ordenar por columna</label>
-            <select id="sheet_sort_col" name="sheet_sort_col">
-              {% for h in sheet_headers %}
-                <option value="{{ loop.index0 }}" {% if sheet_sort_col == loop.index0 %}selected{% endif %}>{{ col_letras[loop.index0] }} ({{ h }})</option>
-              {% endfor %}
-            </select>
+          <div class="card">
+            <label for="archivo_sheet">Cargar archivo (.csv o .txt)</label>
+            <input id="archivo_sheet" name="archivo_sheet" type="file" accept=".csv,.txt" />
+            <button type="submit" name="accion" value="sheet_import" class="btn-secondary">Cargar</button>
           </div>
-          <div>
-            <label for="sheet_sort_dir">Orden</label>
-            <select id="sheet_sort_dir" name="sheet_sort_dir">
-              <option value="asc" {% if sheet_sort_dir == 'asc' %}selected{% endif %}>Ascendente</option>
-              <option value="desc" {% if sheet_sort_dir == 'desc' %}selected{% endif %}>Descendente</option>
-            </select>
+          <div class="card">
+            <label for="sheet_sort_col">Ordenar columna</label>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <select id="sheet_sort_col" name="sheet_sort_col" style="flex:1 1 120px; margin-bottom:0;">
+                {% for h in sheet_headers %}
+                  <option value="{{ loop.index0 }}" {% if sheet_sort_col == loop.index0 %}selected{% endif %}>{{ col_letras[loop.index0] }} ({{ h }})</option>
+                {% endfor %}
+              </select>
+              <select id="sheet_sort_dir" name="sheet_sort_dir" style="flex:1 1 110px; margin-bottom:0;">
+                <option value="asc" {% if sheet_sort_dir == 'asc' %}selected{% endif %}>Ascendente</option>
+                <option value="desc" {% if sheet_sort_dir == 'desc' %}selected{% endif %}>Descendente</option>
+              </select>
+              <button type="submit" name="accion" value="sheet_sort" class="btn-secondary">Ordenar</button>
+            </div>
           </div>
         </div>
-        <button type="submit" name="accion" value="sheet_sort" class="btn-secondary" style="margin-bottom:12px;">Ordenar hoja</button>
 
-        <div class="table-wrap" style="margin-bottom:16px;">
-          <table>
+        <div class="stat-mini-row">
+          <div class="stat-mini-item"><span class="stat-mini-lbl">Selección:</span><span id="selRangeLabel" class="stat-mini-val">A1</span></div>
+          <div class="stat-mini-item"><span class="stat-mini-lbl">Celdas:</span><span class="stat-mini-val">{{ row_max_num * (col_letras | length) }}</span></div>
+          <div class="stat-mini-item"><span class="stat-mini-lbl">Filas:</span><span class="stat-mini-val">{{ row_max_num }}</span></div>
+          <div class="stat-mini-item"><span class="stat-mini-lbl">Cols:</span><span class="stat-mini-val">{{ col_letras | length }}</span></div>
+        </div>
+
+        <div class="table-wrap" style="margin-bottom:16px;" id="excelGridWrap">
+          <table id="excelGrid">
             <thead>
               <tr>
-                <th class="row-num">#</th>
+                <th class="row-num"></th>
                 {% for h in sheet_headers %}
                   <th>
-                    <div style="font-size:0.72rem; color:#fda4af; margin-bottom:2px;">Columna {{ col_letras[loop.index0] }}</div>
-                    <input class="sheet-input" type="text" name="sh_{{ loop.index0 }}" value="{{ h }}" />
+                    <div style="font-size:0.74rem; color:#fda4af; text-align:center;">{{ col_letras[loop.index0] }}</div>
+                    <input class="sheet-cell" style="font-weight:700; text-align:center;" type="text" name="sh_{{ loop.index0 }}" value="{{ h }}" />
                   </th>
                 {% endfor %}
               </tr>
@@ -699,11 +707,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                   <td class="row-num">{{ loop.index }}</td>
                   {% for celda in fila %}
                     {% set c_idx = loop.index0 %}
-                    <td>
-                      <input class="sheet-input" type="text" name="c_{{ r_idx }}_{{ c_idx }}" value="{{ celda }}" placeholder="{{ col_letras[c_idx] }}{{ loop.index if false else (r_idx + 1) }}" />
+                    <td id="td_{{ r_idx }}_{{ c_idx }}" data-r="{{ r_idx }}" data-c="{{ c_idx }}" data-ref="{{ col_letras[c_idx] }}{{ r_idx + 1 }}">
+                      <input id="inp_{{ r_idx }}_{{ c_idx }}" class="sheet-cell" type="text" name="c_{{ r_idx }}_{{ c_idx }}" value="{{ celda }}" placeholder="{{ col_letras[c_idx] }}{{ r_idx + 1 }}" />
                       {% set eval_val = sheet_eval[r_idx][c_idx] %}
                       {% if celda.startswith('=') %}
-                        <small style="color:#6ee7b7; display:block; margin-top:2px;">= {{ eval_val }}</small>
+                        <small style="color:#6ee7b7; display:block; padding:0 6px 3px;">= {{ eval_val }}</small>
                       {% endif %}
                     </td>
                   {% endfor %}
@@ -714,12 +722,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
       </form>
 
-      <canvas id="chartSheet" height="95"></canvas>
+      {% if mostrar_grafico_hoja %}
+        <canvas id="chartSheet" height="95"></canvas>
+      {% endif %}
     </section>
 
     <!-- 5. 30 NOTICIAS -->
     <section id="m5" class="mod-panel {% if active_mod != 'm5' %}hidden{% endif %}">
-      <h2>5. Noticias (30 disponibles)</h2>
+      <h2>5. Noticias (30)</h2>
       <p style="color:var(--muted)">Filtra las 30 noticias con la lupita o abre los enlaces.</p>
 
       <form method="POST" class="search-row">
@@ -732,7 +742,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
       <div style="margin-bottom:12px;">
         <a class="btn-secondary" href="https://news.google.com/search?q={{ news_query_encoded }}" target="_blank" rel="noopener noreferrer">
-          Buscar "{{ news_query }}" en Google Noticias →
+          Google Noticias →
         </a>
       </div>
 
@@ -753,7 +763,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     <!-- 6. 30 VIDEOS -->
     <section id="m6" class="mod-panel {% if active_mod != 'm6' %}hidden{% endif %}">
-      <h2>6. Videos (30 disponibles)</h2>
+      <h2>6. Videos (30)</h2>
       <p style="color:var(--muted)">Filtra los 30 videos o abre enlaces en YouTube, TikTok e Instagram.</p>
 
       <form method="POST" class="search-row">
@@ -782,17 +792,17 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
     </section>
 
-    <!-- 7. ENCICLOPEDIA CON DEFINICIONES COMPLETAS Y EJEMPLOS -->
+    <!-- 7. BUSCADOR WEB -->
     <section id="m7" class="mod-panel {% if active_mod != 'm7' %}hidden{% endif %}">
-      <h2>7. Enciclopedia y consulta</h2>
-      <p style="color:var(--muted)">Escribe un tema (ej: <em>tecnología</em>, <em>programación</em>, <em>petróleo</em>, <em>base de datos</em>, <em>hoja de cálculo</em>, <em>inteligencia artificial</em>, <em>fútbol</em>, <em>economía</em>, <em>ciencia</em>) para leer su definición completa y ejemplo.</p>
+      <h2>7. Buscador web</h2>
+      <p style="color:var(--muted)">Consulta un tema o persona (ej: <em>Messi</em>, <em>tecnología</em>, <em>programación</em>, <em>petróleo</em>, <em>Excel</em>).</p>
 
       <form method="POST" class="search-row">
         <input type="hidden" name="codigo" value="{{ codigo }}" />
         <input type="hidden" name="active_mod" value="m7" />
         <input type="hidden" name="accion" value="buscar_web" />
-        <input type="text" name="web_query" value="{{ web_query }}" placeholder="Escriba un concepto o tema..." />
-        <button type="submit" class="btn-primary" style="width:auto;">Consultar</button>
+        <input type="text" name="web_query" value="{{ web_query }}" placeholder="Buscar en la web..." />
+        <button type="submit" class="btn-primary" style="width:auto;">Buscar</button>
       </form>
 
       <div class="card" style="margin-bottom:14px;">
@@ -803,22 +813,65 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
         <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:12px; font-size:0.86rem;">
           <a href="https://www.google.com/search?q={{ web_query_encoded }}" target="_blank" rel="noopener noreferrer">Google →</a>
-          <a href="https://es.wikipedia.org/wiki/Especial:Buscar?search={{ web_query_encoded }}" target="_blank" rel="noopener noreferrer">Wikipedia →</a>
           <a href="https://news.google.com/search?q={{ web_query_encoded }}" target="_blank" rel="noopener noreferrer">Noticias →</a>
+          <a href="https://www.youtube.com/results?search_query={{ web_query_encoded }}" target="_blank" rel="noopener noreferrer">YouTube →</a>
         </div>
       </div>
     </section>
 
-    <!-- 8. ESTADO -->
+    <!-- 8. AJUSTES -->
     <section id="m8" class="mod-panel {% if active_mod != 'm8' %}hidden{% endif %}">
-      <h2>8. Estado del sistema C-PRE2</h2>
-      <div class="stat-grid">
-        <div class="stat-box"><div class="stat-label">Plataforma</div><div class="stat-val">C-PRE2</div></div>
-        <div class="stat-box"><div class="stat-label">Estado</div><div class="stat-val" style="color:var(--ok)">ACTIVO</div></div>
-        <div class="stat-box"><div class="stat-label">Registros DB</div><div class="stat-val">{{ stats.count }}</div></div>
-        <div class="stat-box"><div class="stat-label">Uso</div><div class="stat-val">{{ uso }} / {{ limite }}</div></div>
+      <h2>8. Ajustes</h2>
+      <p style="color:var(--muted)">Idioma (20 principales) y ajustes de la aplicación sin crear cuenta.</p>
+
+      <form method="POST" class="grid-2">
+        <input type="hidden" name="codigo" value="{{ codigo }}" />
+        <input type="hidden" name="active_mod" value="m8" />
+        <input type="hidden" name="accion" value="guardar_ajustes" />
+
+        <div class="card">
+          <h3 style="margin-top:0">Idioma (Top 20)</h3>
+          <label for="idioma_sel">Idioma de interfaz</label>
+          <select id="idioma_sel" name="idioma_sel">
+            {% for code_lang, label_lang in idiomas_20 %}
+              <option value="{{ code_lang }}" {% if idioma == code_lang %}selected{% endif %}>{{ label_lang }}</option>
+            {% endfor %}
+          </select>
+
+          <label for="decimales_sel">Decimales en fórmulas</label>
+          <select id="decimales_sel" name="decimales_sel">
+            <option value="0" {% if decimales == 0 %}selected{% endif %}>0</option>
+            <option value="2" {% if decimales == 2 %}selected{% endif %}>2</option>
+            <option value="4" {% if decimales == 4 %}selected{% endif %}>4</option>
+          </select>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0">Visualización</h3>
+          <label for="acento_sel">Color de acento</label>
+          <select id="acento_sel" name="acento_sel">
+            <option value="#e11d48" {% if acento_hex == '#e11d48' %}selected{% endif %}>Carmesí</option>
+            <option value="#2563eb" {% if acento_hex == '#2563eb' %}selected{% endif %}>Azul</option>
+            <option value="#059669" {% if acento_hex == '#059669' %}selected{% endif %}>Esmeralda</option>
+            <option value="#d97706" {% if acento_hex == '#d97706' %}selected{% endif %}>Ámbar</option>
+          </select>
+
+          <label for="grafico_hoja_sel">Gráfico en hoja de cálculo</label>
+          <select id="grafico_hoja_sel" name="grafico_hoja_sel">
+            <option value="si" {% if mostrar_grafico_hoja %}selected{% endif %}>Visible</option>
+            <option value="no" {% if not mostrar_grafico_hoja %}selected{% endif %}>Oculto</option>
+          </select>
+
+          <button type="submit" class="btn-primary" style="margin-top:6px;">Guardar ajustes</button>
+        </div>
+      </form>
+
+      <div class="stat-mini-row">
+        <div class="stat-mini-item"><span class="stat-mini-lbl">App:</span><span class="stat-mini-val">C-PRE2</span></div>
+        <div class="stat-mini-item"><span class="stat-mini-lbl">Estado:</span><span class="stat-mini-val" style="color:var(--ok)">OK</span></div>
+        <div class="stat-mini-item"><span class="stat-mini-lbl">Idioma:</span><span class="stat-mini-val">{{ idioma_nombre }}</span></div>
+        <div class="stat-mini-item"><span class="stat-mini-lbl">Uso:</span><span class="stat-mini-val">{{ uso }}/{{ limite }}</span></div>
       </div>
-      <p style="color:var(--muted)">Hoja de cálculo con columnas A–H y filas 1–15, enciclopedia con definiciones y ejemplos, base de datos amplia y 30 noticias / 30 videos.</p>
     </section>
   {% endif %}
 </div>
@@ -834,6 +887,128 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   }
 
   {% if autorizado %}
+  // Selección de celdas y rango tipo Excel
+  let anchorCell = { r: 0, c: 0 };
+  let focusCell = { r: 0, c: 0 };
+  let isDragging = false;
+  let clipboardBlock = null;
+
+  function colToLetterJS(idx) {
+    let s = '';
+    let n = idx + 1;
+    while (n > 0) {
+      const rem = (n - 1) % 26;
+      s = String.fromCharCode(65 + rem) + s;
+      n = Math.floor((n - 1) / 26);
+    }
+    return s;
+  }
+
+  function updateExcelSelectionUI() {
+    const rMin = Math.min(anchorCell.r, focusCell.r);
+    const rMax = Math.max(anchorCell.r, focusCell.r);
+    const cMin = Math.min(anchorCell.c, focusCell.c);
+    const cMax = Math.max(anchorCell.c, focusCell.c);
+
+    document.querySelectorAll('#excelGrid td[data-r]').forEach(td => {
+      td.classList.remove('selected-cell', 'active-cell');
+      const r = parseInt(td.dataset.r, 10);
+      const c = parseInt(td.dataset.c, 10);
+      if (r >= rMin && r <= rMax && c >= cMin && c <= cMax) {
+        td.classList.add('selected-cell');
+      }
+      if (r === focusCell.r && c === focusCell.c) {
+        td.classList.add('active-cell');
+      }
+    });
+
+    const refActive = colToLetterJS(focusCell.c) + (focusCell.r + 1);
+    const refStart = colToLetterJS(cMin) + (rMin + 1);
+    const refEnd = colToLetterJS(cMax) + (rMax + 1);
+    const refBadge = document.getElementById('activeCellRef');
+    const rangeBadge = document.getElementById('selRangeLabel');
+    const fBar = document.getElementById('formulaBarInput');
+    const activeInp = document.getElementById(`inp_${focusCell.r}_${focusCell.c}`);
+
+    if (refBadge) refBadge.textContent = refActive;
+    if (rangeBadge) rangeBadge.textContent = (refStart === refEnd) ? refStart : `${refStart}:${refEnd}`;
+    if (fBar && activeInp && document.activeElement !== fBar) {
+      fBar.value = activeInp.value;
+    }
+  }
+
+  function aplicarFormulaBar() {
+    const fBar = document.getElementById('formulaBarInput');
+    const activeInp = document.getElementById(`inp_${focusCell.r}_${focusCell.c}`);
+    if (fBar && activeInp) {
+      activeInp.value = fBar.value;
+    }
+  }
+
+  function copiarSeleccion() {
+    const rMin = Math.min(anchorCell.r, focusCell.r);
+    const rMax = Math.max(anchorCell.r, focusCell.r);
+    const cMin = Math.min(anchorCell.c, focusCell.c);
+    const cMax = Math.max(anchorCell.c, focusCell.c);
+    const rows = [];
+    for (let r = rMin; r <= rMax; r++) {
+      const rowVals = [];
+      for (let c = cMin; c <= cMax; c++) {
+        const inp = document.getElementById(`inp_${r}_${c}`);
+        rowVals.push(inp ? inp.value : '');
+      }
+      rows.push(rowVals);
+    }
+    clipboardBlock = rows;
+  }
+
+  function pegarSeleccion() {
+    if (!clipboardBlock || !clipboardBlock.length) return;
+    for (let dr = 0; dr < clipboardBlock.length; dr++) {
+      for (let dc = 0; dc < clipboardBlock[dr].length; dc++) {
+        const inp = document.getElementById(`inp_${focusCell.r + dr}_${focusCell.c + dc}`);
+        if (inp) inp.value = clipboardBlock[dr][dc];
+      }
+    }
+    updateExcelSelectionUI();
+  }
+
+  document.querySelectorAll('#excelGrid td[data-r]').forEach(td => {
+    td.addEventListener('mousedown', () => {
+      isDragging = true;
+      anchorCell = { r: parseInt(td.dataset.r, 10), c: parseInt(td.dataset.c, 10) };
+      focusCell = { ...anchorCell };
+      updateExcelSelectionUI();
+    });
+    td.addEventListener('mouseenter', () => {
+      if (!isDragging) return;
+      focusCell = { r: parseInt(td.dataset.r, 10), c: parseInt(td.dataset.c, 10) };
+      updateExcelSelectionUI();
+    });
+    const innerInp = td.querySelector('input.sheet-cell');
+    if (innerInp) {
+      innerInp.addEventListener('focus', () => {
+        if (!isDragging) {
+          anchorCell = { r: parseInt(td.dataset.r, 10), c: parseInt(td.dataset.c, 10) };
+          focusCell = { ...anchorCell };
+        }
+        updateExcelSelectionUI();
+      });
+      innerInp.addEventListener('input', () => {
+        const fBar = document.getElementById('formulaBarInput');
+        if (fBar && parseInt(td.dataset.r, 10) === focusCell.r && parseInt(td.dataset.c, 10) === focusCell.c) {
+          fBar.value = innerInp.value;
+        }
+      });
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  updateExcelSelectionUI();
+
   const ctxCustom = document.getElementById('chartCustom');
   if (ctxCustom) {
     new Chart(ctxCustom, {
@@ -843,22 +1018,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         datasets: [{
           label: 'Serie ordenada',
           data: {{ custom_values | tojson }},
-          backgroundColor: 'rgba(225, 29, 72, 0.58)',
-          borderColor: '#e11d48',
+          backgroundColor: 'rgba(225, 29, 72, 0.55)',
+          borderColor: '{{ acento_hex }}',
           borderWidth: 1
         }]
       },
       options: {
         responsive: true,
-        plugins: { legend: { labels: { color: '#f5f5fc' } } },
+        plugins: { legend: { labels: { color: '#f4f4fa' } } },
         scales: {
-          x: { ticks: { color: '#a4a4ba' }, grid: { color: '#2a2a3e' } },
-          y: { ticks: { color: '#a4a4ba' }, grid: { color: '#2a2a3e' } }
+          x: { ticks: { color: '#9e9eb4' }, grid: { color: '#282838' } },
+          y: { ticks: { color: '#9e9eb4' }, grid: { color: '#282838' } }
         }
       }
     });
   }
 
+  {% if mostrar_grafico_hoja %}
   const ctxSheet = document.getElementById('chartSheet');
   if (ctxSheet) {
     new Chart(ctxSheet, {
@@ -869,21 +1045,22 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           label: 'Valores de la hoja',
           data: {{ sheet_chart_values | tojson }},
           borderColor: '#10b981',
-          backgroundColor: 'rgba(16, 185, 129, 0.22)',
+          backgroundColor: 'rgba(16, 185, 129, 0.18)',
           tension: 0.25,
           fill: true
         }]
       },
       options: {
         responsive: true,
-        plugins: { legend: { labels: { color: '#f5f5fc' } } },
+        plugins: { legend: { labels: { color: '#f4f4fa' } } },
         scales: {
-          x: { ticks: { color: '#a4a4ba' }, grid: { color: '#2a2a3e' } },
-          y: { ticks: { color: '#a4a4ba' }, grid: { color: '#2a2a3e' } }
+          x: { ticks: { color: '#9e9eb4' }, grid: { color: '#282838' } },
+          y: { ticks: { color: '#9e9eb4' }, grid: { color: '#282838' } }
         }
       }
     });
   }
+  {% endif %}
   {% endif %}
 </script>
 </body>
@@ -894,19 +1071,19 @@ ESTADO_SESIONES = {}
 
 
 def _crear_hoja_inicial():
-    cols = 8
-    rows = 15
-    headers = ["Concepto / Item", "Cantidad", "Valor", "Subtotal", "Meta", "Desviación", "Estado", "Nota"]
+    cols = 10
+    rows = 20
+    headers = ["Concepto", "Cantidad", "Valor", "Subtotal", "Meta", "Diferencia", "Estado", "Nota", "Extra 1", "Extra 2"]
     grid = [["" for _ in range(cols)] for _ in range(rows)]
-    datos_ejemplo = [
-        ("Item A", "10", "25", "=B1*C1", "220", "=D1-E1", '=SI(D1>=E1;"Cumple";"Ajustar")', "Base"),
-        ("Item B", "8", "30", "=B2*C2", "200", "=D2-E2", '=SI(D2>=E2;"Cumple";"Ajustar")', "Base"),
-        ("Item C", "12", "18", "=B3*C3", "210", "=D3-E3", '=SI(D3>=E3;"Cumple";"Ajustar")', "Base"),
-        ("Item D", "6", "45", "=B4*C4", "250", "=D4-E4", '=SI(D4>=E4;"Cumple";"Ajustar")', "Base"),
-        ("Item E", "15", "20", "=B5*C5", "280", "=D5-E5", '=SI(D5>=E5;"Cumple";"Ajustar")', "Base"),
-        ("Total", "=SUMA(B1:B5)", "=PROMEDIO(C1:C5)", "=SUMA(D1:D5)", "=SUMA(E1:E5)", "=SUMA(F1:F5)", "", "Resumen"),
+    base = [
+        ("Item A", "10", "25", "=B1*C1", "220", "=D1-E1", '=SI(D1>=E1;"Cumple";"Ajustar")', "Base", "", ""),
+        ("Item B", "8", "30", "=B2*C2", "200", "=D2-E2", '=SI(D2>=E2;"Cumple";"Ajustar")', "Base", "", ""),
+        ("Item C", "12", "18", "=B3*C3", "210", "=D3-E3", '=SI(D3>=E3;"Cumple";"Ajustar")', "Base", "", ""),
+        ("Item D", "6", "45", "=B4*C4", "250", "=D4-E4", '=SI(D4>=E4;"Cumple";"Ajustar")', "Base", "", ""),
+        ("Item E", "15", "20", "=B5*C5", "280", "=D5-E5", '=SI(D5>=E5;"Cumple";"Ajustar")', "Base", "", ""),
+        ("Total", "=SUMA(B1:B5)", "=PROMEDIO(C1:C5)", "=SUMA(D1:D5)", "=SUMA(E1:E5)", "=SUMA(F1:F5)", "", "Resumen", "", ""),
     ]
-    for r_i, fila_d in enumerate(datos_ejemplo):
+    for r_i, fila_d in enumerate(base):
         for c_i, val_d in enumerate(fila_d):
             grid[r_i][c_i] = val_d
     return headers, grid
@@ -921,14 +1098,15 @@ def obtener_estado(codigo):
         ESTADO_SESIONES[code] = {
             "uso": 0,
             "active_mod": "m1",
+            "idioma": "es",
+            "acento_hex": "#e11d48",
+            "decimales": 2,
+            "mostrar_grafico_hoja": True,
             "registros": [
                 {"nombre": "Producto Alfa", "valor": 45, "categoria": "Inventario", "fecha": "2026-11-18"},
                 {"nombre": "Producto Beta", "valor": 120, "categoria": "Ventas", "fecha": "2026-11-20"},
                 {"nombre": "Producto Gamma", "valor": 75, "categoria": "Inventario", "fecha": "2026-11-15"},
             ],
-            "db_modo_orden": "manual",
-            "db_sort_by": "nombre",
-            "db_sort_dir": "asc",
             "code_input": (
                 "numeros = [15, 42, 8, 90, 27, 63]\n"
                 "print('Ordenados:', sorted(numeros))\n"
@@ -944,7 +1122,7 @@ def obtener_estado(codigo):
             "sheet_sort_dir": "asc",
             "news_query": "",
             "video_query": "",
-            "web_query": "tecnología",
+            "web_query": "Messi",
         }
     return ESTADO_SESIONES[code]
 
@@ -958,24 +1136,59 @@ def _col_to_idx(col_str):
     return idx - 1
 
 
-def _expand_range(rango_str, grid_raw):
+def _parse_rango_coords(rango_str, grid_raw):
     m = re.match(r"^([A-Za-z]+)(\d+):([A-Za-z]+)(\d+)$", rango_str.strip())
     if not m:
         return []
     c1, r1, c2, r2 = _col_to_idx(m.group(1)), int(m.group(2)) - 1, _col_to_idx(m.group(3)), int(m.group(4)) - 1
-    vals = []
+    coords = []
     for r in range(min(r1, r2), max(r1, r2) + 1):
         for c in range(min(c1, c2), max(c1, c2) + 1):
             if 0 <= r < len(grid_raw) and 0 <= c < len(grid_raw[r]):
-                v = evaluar_celda(grid_raw[r][c], grid_raw, visitadas=set())
-                try:
-                    vals.append(float(v))
-                except (TypeError, ValueError):
-                    pass
+                coords.append((r, c))
+    return coords
+
+
+def _expand_range(rango_str, grid_raw, decimales=2):
+    vals = []
+    for r, c in _parse_rango_coords(rango_str, grid_raw):
+        v = evaluar_celda(grid_raw[r][c], grid_raw, visitadas=set(), decimales=decimales)
+        try:
+            vals.append(float(v))
+        except (TypeError, ValueError):
+            pass
     return vals
 
 
-def evaluar_celda(val, grid_raw, visitadas=None):
+def _expand_text_range(rango_str, grid_raw, decimales=2):
+    items = []
+    for r, c in _parse_rango_coords(rango_str, grid_raw):
+        v = str(evaluar_celda(grid_raw[r][c], grid_raw, visitadas=set(), decimales=decimales)).strip()
+        if v:
+            items.append(v)
+    return items
+
+
+def _resolver_token_celda(token, grid_raw, visitadas, decimales=2):
+    t = token.strip().strip('"')
+    ref = re.match(r"^([A-Za-z]{1,2})(\d{1,3})$", t)
+    if ref:
+        ci, ri = _col_to_idx(ref.group(1)), int(ref.group(2)) - 1
+        if 0 <= ri < len(grid_raw) and 0 <= ci < len(grid_raw[ri]):
+            return str(evaluar_celda(grid_raw[ri][ci], grid_raw, set(visitadas), decimales=decimales))
+        return ""
+    return t
+
+
+def _fmt_num(val_num, decimales=2):
+    if isinstance(val_num, float) and val_num.is_integer():
+        return str(int(val_num))
+    if isinstance(val_num, float):
+        return str(round(val_num, decimales))
+    return str(val_num)
+
+
+def evaluar_celda(val, grid_raw, visitadas=None, decimales=2):
     if visitadas is None:
         visitadas = set()
     s = str(val or "").strip()
@@ -984,6 +1197,48 @@ def evaluar_celda(val, grid_raw, visitadas=None):
 
     expr = s[1:].strip()
 
+    if expr.upper() in ("HOY()", "TODAY()"):
+        return datetime.now().strftime("%Y-%m-%d")
+
+    m_mayus = re.match(r"^MAYUS\((.+)\)$", expr, flags=re.IGNORECASE)
+    if m_mayus:
+        return _resolver_token_celda(m_mayus.group(1), grid_raw, visitadas, decimales).upper()
+
+    m_minus = re.match(r"^MINUS\((.+)\)$", expr, flags=re.IGNORECASE)
+    if m_minus:
+        return _resolver_token_celda(m_minus.group(1), grid_raw, visitadas, decimales).lower()
+
+    m_conc = re.match(r"^CONCATENAR\((.+)\)$", expr, flags=re.IGNORECASE)
+    if m_conc:
+        partes = re.split(r"[;,]", m_conc.group(1))
+        return "".join(_resolver_token_celda(p, grid_raw, visitadas, decimales) for p in partes)
+
+    m_cs = re.match(r"^CONTAR\.SI\((.+)\)$", expr, flags=re.IGNORECASE)
+    if m_cs:
+        partes_cs = [p.strip() for p in re.split(r"[;,]", m_cs.group(1))]
+        if len(partes_cs) >= 2:
+            criterio = partes_cs[1].strip('"')
+            items = _expand_text_range(partes_cs[0], grid_raw, decimales)
+            return str(sum(1 for it in items if it == criterio))
+
+    m_ss = re.match(r"^SUMAR\.SI\((.+)\)$", expr, flags=re.IGNORECASE)
+    if m_ss:
+        partes_ss = [p.strip() for p in re.split(r"[;,]", m_ss.group(1))]
+        if len(partes_ss) >= 3:
+            criterio = partes_ss[1].strip('"')
+            crit_coords = _parse_rango_coords(partes_ss[0], grid_raw)
+            sum_coords = _parse_rango_coords(partes_ss[2], grid_raw)
+            total_ss = 0.0
+            for idx_p, (rc, cc) in enumerate(crit_coords):
+                val_c = str(evaluar_celda(grid_raw[rc][cc], grid_raw, set(visitadas), decimales)).strip()
+                if val_c == criterio and idx_p < len(sum_coords):
+                    sr, sc = sum_coords[idx_p]
+                    try:
+                        total_ss += float(evaluar_celda(grid_raw[sr][sc], grid_raw, set(visitadas), decimales))
+                    except (TypeError, ValueError):
+                        pass
+            return _fmt_num(total_ss, decimales)
+
     m_si = re.match(r"^SI\((.+)\)$", expr, flags=re.IGNORECASE)
     if m_si:
         partes_si = [p.strip() for p in re.split(r"[;,]", m_si.group(1))]
@@ -991,7 +1246,7 @@ def evaluar_celda(val, grid_raw, visitadas=None):
             cond_raw, v_true, v_false = partes_si[0], partes_si[1].strip('"'), partes_si[2].strip('"')
             cond_eval = re.sub(
                 r"\b([A-Za-z]{1,2})(\d{1,3})\b",
-                lambda mm: str(float(evaluar_celda(grid_raw[int(mm.group(2)) - 1][_col_to_idx(mm.group(1))], grid_raw, set(visitadas)))),
+                lambda mm: str(float(evaluar_celda(grid_raw[int(mm.group(2)) - 1][_col_to_idx(mm.group(1))], grid_raw, set(visitadas), decimales))),
                 cond_raw,
             )
             try:
@@ -1005,14 +1260,20 @@ def evaluar_celda(val, grid_raw, visitadas=None):
     if m_red:
         partes_r = [p.strip() for p in re.split(r"[;,]", m_red.group(1))]
         if len(partes_r) >= 2:
-            v_num = float(evaluar_celda("=" + partes_r[0], grid_raw, set(visitadas)))
+            v_num = float(evaluar_celda("=" + partes_r[0], grid_raw, set(visitadas), decimales))
             dec = int(float(partes_r[1]))
             return str(round(v_num, max(0, dec)))
 
     def repl_func(match):
         fname = match.group(1).upper()
         arg = match.group(2).strip()
-        nums = _expand_range(arg, grid_raw)
+        if fname in ("CONTARA", "COUNTA"):
+            rango_items = _expand_text_range(arg, grid_raw, decimales)
+            if rango_items:
+                return str(len(rango_items))
+            partes_t = [_resolver_token_celda(p, grid_raw, visitadas, decimales) for p in re.split(r"[;,]", arg)]
+            return str(len([x for x in partes_t if x != ""]))
+        nums = _expand_range(arg, grid_raw, decimales)
         if not nums:
             for part in re.split(r"[;,]", arg):
                 part = part.strip()
@@ -1021,7 +1282,7 @@ def evaluar_celda(val, grid_raw, visitadas=None):
                     ci, ri = _col_to_idx(ref.group(1)), int(ref.group(2)) - 1
                     if 0 <= ri < len(grid_raw) and 0 <= ci < len(grid_raw[ri]):
                         try:
-                            nums.append(float(evaluar_celda(grid_raw[ri][ci], grid_raw, set(visitadas))))
+                            nums.append(float(evaluar_celda(grid_raw[ri][ci], grid_raw, set(visitadas), decimales)))
                         except (TypeError, ValueError):
                             pass
                 else:
@@ -1029,7 +1290,7 @@ def evaluar_celda(val, grid_raw, visitadas=None):
                         nums.append(float(part))
                     except ValueError:
                         pass
-        if fname in ("CONTAR", "COUNT", "CONTARA"):
+        if fname in ("CONTAR", "COUNT"):
             return str(len(nums))
         if not nums:
             return "0"
@@ -1037,6 +1298,13 @@ def evaluar_celda(val, grid_raw, visitadas=None):
             return str(sum(nums))
         if fname in ("PROMEDIO", "AVG", "AVERAGE"):
             return str(sum(nums) / len(nums))
+        if fname in ("MEDIANA", "MEDIAN"):
+            return str(statistics.median(nums))
+        if fname in ("MODA", "MODE"):
+            try:
+                return str(statistics.mode(nums))
+            except statistics.StatisticsError:
+                return str(nums[0])
         if fname == "MAX":
             return str(max(nums))
         if fname == "MIN":
@@ -1044,7 +1312,7 @@ def evaluar_celda(val, grid_raw, visitadas=None):
         return "0"
 
     expr = re.sub(
-        r"\b(SUMA|SUM|PROMEDIO|AVG|AVERAGE|MAX|MIN|CONTAR|COUNT|CONTARA)\(([^()]+)\)",
+        r"\b(SUMA|SUM|PROMEDIO|AVG|AVERAGE|MEDIANA|MEDIAN|MODA|MODE|MAX|MIN|CONTAR|COUNT|CONTARA|COUNTA)\(([^()]+)\)",
         repl_func,
         expr,
         flags=re.IGNORECASE,
@@ -1058,7 +1326,7 @@ def evaluar_celda(val, grid_raw, visitadas=None):
         if key in visitadas or ri < 0 or ci < 0 or ri >= len(grid_raw) or ci >= len(grid_raw[ri]):
             return "0"
         visitadas.add(key)
-        res = evaluar_celda(grid_raw[ri][ci], grid_raw, visitadas)
+        res = evaluar_celda(grid_raw[ri][ci], grid_raw, visitadas, decimales)
         try:
             return str(float(res))
         except (TypeError, ValueError):
@@ -1069,37 +1337,14 @@ def evaluar_celda(val, grid_raw, visitadas=None):
     try:
         if re.match(r"^[0-9+\-*/().\s]+$", expr):
             val_num = eval(expr, {"__builtins__": {}}, {})
-            if isinstance(val_num, float) and val_num.is_integer():
-                return str(int(val_num))
-            if isinstance(val_num, float):
-                return str(round(val_num, 4))
-            return str(val_num)
+            return _fmt_num(val_num, decimales)
     except Exception:
         return "ERR"
     return expr
 
 
-def evaluar_hoja(sheet_raw):
-    return [[evaluar_celda(c, sheet_raw, set()) for c in fila] for fila in sheet_raw]
-
-
-def ordenar_registros(registros, modo="manual", campo="nombre", direccion="asc"):
-    if modo == "auto":
-        if not registros:
-            return []
-        vals = [float(r.get("valor", 0) or 0) for r in registros]
-        if len(set(vals)) > 1:
-            return sorted(registros, key=lambda x: float(x.get("valor", 0) or 0), reverse=True)
-        return sorted(registros, key=lambda x: str(x.get("nombre", "")).lower())
-
-    rev = (direccion == "desc")
-    if campo == "valor":
-        return sorted(registros, key=lambda x: float(x.get("valor", 0) or 0), reverse=rev)
-    if campo == "fecha":
-        return sorted(registros, key=lambda x: str(x.get("fecha", "")), reverse=rev)
-    if campo == "categoria":
-        return sorted(registros, key=lambda x: str(x.get("categoria", "")).lower(), reverse=rev)
-    return sorted(registros, key=lambda x: str(x.get("nombre", "")).lower(), reverse=rev)
+def evaluar_hoja(sheet_raw, decimales=2):
+    return [[evaluar_celda(c, sheet_raw, set(), decimales=decimales) for c in fila] for fila in sheet_raw]
 
 
 def parsear_lineas_db(texto):
@@ -1235,45 +1480,45 @@ def ejecutar_codigo_python(codigo_fuente):
     try:
         exec(codigo_fuente, entorno, {})
         out = buf.getvalue().strip()
-        return out if out else "Código ejecutado sin salida impresa."
+        return out if out else "Script ejecutado sin salida impresa."
     except Exception as e:
         return f"Error: {e}"
 
 
-def consultar_enciclopedia(query):
-    q_raw = (query or "tecnología").strip()
-    q = q_raw.lower()
-    # Normalizar acentos básicos para buscar mejor
+def responder_busqueda_natural(query):
+    q_raw = (query or "Messi").strip()
     q_norm = (
-        q.replace("á", "a").replace("é", "e").replace("í", "i")
+        q_raw.lower()
+        .replace("á", "a").replace("é", "e").replace("í", "i")
         .replace("ó", "o").replace("ú", "u")
     )
-    for clave, info in ENCICLOPEDIA_COMPLETA.items():
+    for clave, info in RESPUESTAS_NATURALES.items():
         if clave in q_norm or q_norm in clave:
-            return info["titulo"], info["definicion"], info["ejemplo"]
+            return info["titulo"], info["concepto"], info["ejemplo"]
 
-    nombre = q_raw.capitalize()
+    tema = q_raw.capitalize()
     return (
-        nombre,
-        f"{nombre} es un concepto o ámbito que puede estudiarse desde sus fundamentos teóricos, "
-        f"sus componentes principales, sus aplicaciones prácticas y su impacto real. Comprender "
-        f"cómo funciona {q_raw} implica identificar sus elementos clave, cómo interactúan entre sí "
-        f"y en qué situaciones resulta más útil aplicarlo.",
-        f"Ejemplo práctico: Si trabajas con '{q_raw}', define primero el objetivo concreto, "
-        f"reúne los datos o elementos involucrados, aplica un método ordenado de análisis y "
-        f"comprueba el resultado obtenido.",
+        tema,
+        f"{tema} se refiere a un tema, persona o concepto que conviene revisar desde su idea "
+        f"central, su funcionamiento práctico y los resultados o noticias disponibles.",
+        f"Usa los enlaces de abajo para ver resultados directos en Google, Noticias o YouTube sobre {q_raw}.",
     )
+
+
+def _nombre_idioma(code):
+    for c, lbl in IDIOMAS_20:
+        if c == code:
+            return lbl
+    return "Español"
 
 
 def render_panel(codigo, estado, error_msg=None, aviso_msg=None):
     info = CODIGOS_ACCESO[codigo]
-    registros_ordenados = ordenar_registros(
-        estado["registros"], estado["db_modo_orden"], estado["db_sort_by"], estado["db_sort_dir"]
-    )
     custom_labels, custom_values = ordenar_elementos_custom(
         estado["custom_items"], estado["custom_tipo"], estado["custom_dir"]
     )
-    sheet_eval = evaluar_hoja(estado["sheet_raw"])
+    decimales = estado.get("decimales", 2)
+    sheet_eval = evaluar_hoja(estado["sheet_raw"], decimales=decimales)
 
     col_letras = [_col_letra(i) for i in range(len(estado["sheet_headers"]))]
     sheet_labels = []
@@ -1289,7 +1534,7 @@ def render_panel(codigo, estado, error_msg=None, aviso_msg=None):
                 continue
         if num_encontrado is not None:
             sheet_labels.append(str(lbl))
-            sheet_vals.append(int(num_encontrado) if num_encontrado.is_integer() else round(num_encontrado, 2))
+            sheet_vals.append(int(num_encontrado) if num_encontrado.is_integer() else round(num_encontrado, decimales))
 
     nq = (estado["news_query"] or "").strip()
     if nq:
@@ -1314,8 +1559,8 @@ def render_panel(codigo, estado, error_msg=None, aviso_msg=None):
     else:
         videos_lista = VIDEOS_30
 
-    wq = (estado["web_query"] or "tecnología").strip()
-    web_t, web_def, web_ej = consultar_enciclopedia(wq)
+    wq = (estado["web_query"] or "Messi").strip()
+    web_t, web_def, web_ej = responder_busqueda_natural(wq)
 
     return render_template_string(
         HTML_TEMPLATE,
@@ -1326,14 +1571,17 @@ def render_panel(codigo, estado, error_msg=None, aviso_msg=None):
         plan=info["plan"],
         limite=info["limite"],
         uso=estado["uso"],
+        idioma=estado["idioma"],
+        idioma_nombre=_nombre_idioma(estado["idioma"]),
+        idiomas_20=IDIOMAS_20,
+        acento_hex=estado["acento_hex"],
+        decimales=decimales,
+        mostrar_grafico_hoja=estado.get("mostrar_grafico_hoja", True),
         active_mod=estado.get("active_mod", "m1"),
         code_input=estado["code_input"],
         code_output=estado["code_output"],
-        registros=registros_ordenados,
-        db_modo_orden=estado["db_modo_orden"],
-        db_sort_by=estado["db_sort_by"],
-        db_sort_dir=estado["db_sort_dir"],
-        stats=calcular_stats(registros_ordenados),
+        registros=estado["registros"],
+        stats=calcular_stats(estado["registros"]),
         custom_items=estado["custom_items"],
         custom_tipo=estado["custom_tipo"],
         custom_dir=estado["custom_dir"],
@@ -1391,6 +1639,8 @@ def index():
             return render_template_string(
                 HTML_TEMPLATE,
                 autorizado=False,
+                idioma="es",
+                acento_hex="#e11d48",
                 error="Código no válido. Usa DEMO2026, VIP100 o EXCELSO99.",
             )
 
@@ -1414,29 +1664,34 @@ def index():
             estado["code_output"] = ejecutar_codigo_python(src)
             estado["active_mod"] = "m1"
 
+        elif accion == "agregar_registro":
+            nombre = (request.form.get("db_nombre") or "").strip()
+            valor_raw = request.form.get("db_valor")
+            categoria = (request.form.get("db_categoria") or "General").strip()
+            fecha = (request.form.get("db_fecha") or datetime.now().strftime("%Y-%m-%d")).strip()
+            try:
+                valor = float(valor_raw)
+                val_fmt = int(valor) if valor.is_integer() else round(valor, 4)
+                if nombre:
+                    estado["registros"].append(
+                        {"nombre": nombre, "valor": val_fmt, "categoria": categoria, "fecha": fecha}
+                    )
+                    aviso = f"Registro '{nombre}' guardado."
+            except (TypeError, ValueError):
+                error = "Ingresa un valor numérico válido."
+            estado["active_mod"] = "m2"
+
         elif accion == "cargar_lote_db":
             lote = parsear_lineas_db(request.form.get("lote_db_texto") or "")
-            autog = int(request.form.get("autollenar_n") or 0)
-            modo = request.form.get("modo_carga_db") or "reemplazar"
-            if autog > 0:
-                extra = [
-                    {
-                        "nombre": f"Registro {i}",
-                        "valor": (i * 15) % 300 + 10,
-                        "categoria": "Lote" if i % 2 == 0 else "Operación",
-                        "fecha": f"2026-11-{(i % 28) + 1:02d}",
-                    }
-                    for i in range(1, autog + 1)
-                ]
-                lote.extend(extra)
+            modo = request.form.get("modo_carga_db") or "agregar"
             if lote:
                 if modo == "reemplazar":
                     estado["registros"] = lote
                 else:
                     estado["registros"].extend(lote)
-                aviso = f"Base actualizada: {len(lote)} fila(s) cargadas."
+                aviso = f"Cargados {len(lote)} registro(s)."
             else:
-                error = "Escriba o pegue filas o seleccione generar registros."
+                error = "Escriba o pegue al menos una fila."
             estado["active_mod"] = "m2"
 
         elif accion == "importar_archivo":
@@ -1453,29 +1708,14 @@ def index():
                     error = f"Error al importar archivo: {e}"
             estado["active_mod"] = "m2"
 
-        elif accion == "ordenar_db":
-            estado["db_modo_orden"] = request.form.get("db_modo_orden") or "manual"
-            estado["db_sort_by"] = request.form.get("db_sort_by") or "nombre"
-            estado["db_sort_dir"] = request.form.get("db_sort_dir") or "asc"
-            aviso = f"Base ordenada ({estado['db_modo_orden']})."
-            estado["active_mod"] = "m2"
-
         elif accion == "borrar_fila":
             try:
                 idx = int(request.form.get("fila_idx", -1))
-                ordenadas = ordenar_registros(
-                    estado["registros"], estado["db_modo_orden"], estado["db_sort_by"], estado["db_sort_dir"]
-                )
-                if 0 <= idx < len(ordenadas):
-                    estado["registros"].remove(ordenadas[idx])
-                    aviso = "Fila eliminada."
+                if 0 <= idx < len(estado["registros"]):
+                    estado["registros"].pop(idx)
+                    aviso = "Registro eliminado."
             except Exception:
-                error = "No se pudo eliminar la fila."
-            estado["active_mod"] = "m2"
-
-        elif accion == "limpiar_db":
-            estado["registros"] = []
-            aviso = "Base de datos vaciada."
+                error = "No se pudo eliminar el registro."
             estado["active_mod"] = "m2"
 
         elif accion == "ordenar_custom":
@@ -1490,9 +1730,10 @@ def index():
         ):
             leer_hoja_desde_form(estado)
             n_cols = len(estado["sheet_headers"])
+            dec = estado.get("decimales", 2)
             if accion == "sheet_add_row":
                 estado["sheet_raw"].append(["" for _ in range(n_cols)])
-                aviso = "Fila añadida."
+                aviso = "Fila agregada."
             elif accion == "sheet_del_row":
                 if len(estado["sheet_raw"]) > 1:
                     estado["sheet_raw"].pop()
@@ -1500,10 +1741,10 @@ def index():
                 else:
                     error = "Debe quedar al menos 1 fila."
             elif accion == "sheet_add_col":
-                estado["sheet_headers"].append(f"Col {n_cols + 1}")
+                estado["sheet_headers"].append(f"Col {_col_letra(n_cols)}")
                 for f in estado["sheet_raw"]:
                     f.append("")
-                aviso = "Columna añadida."
+                aviso = "Columna agregada."
             elif accion == "sheet_del_col":
                 if n_cols > 1:
                     estado["sheet_headers"].pop()
@@ -1530,7 +1771,7 @@ def index():
                 estado["sheet_sort_col"] = max(0, min(col_i, n_cols - 1))
                 estado["sheet_sort_dir"] = s_dir
                 rev = (s_dir == "desc")
-                evaluada_pairs = list(zip(estado["sheet_raw"], evaluar_hoja(estado["sheet_raw"])))
+                evaluada_pairs = list(zip(estado["sheet_raw"], evaluar_hoja(estado["sheet_raw"], decimales=dec)))
 
                 def clave_fila(par):
                     _, ev_f = par
@@ -1544,7 +1785,7 @@ def index():
                 estado["sheet_raw"] = [p[0] for p in evaluada_pairs]
                 aviso = f"Hoja ordenada por columna {_col_letra(estado['sheet_sort_col'])}."
             else:
-                aviso = "Fórmulas calculadas."
+                aviso = "Hoja calculada."
             estado["active_mod"] = "m4"
 
         elif accion == "buscar_noticias":
@@ -1556,12 +1797,35 @@ def index():
             estado["active_mod"] = "m6"
 
         elif accion == "buscar_web":
-            estado["web_query"] = (request.form.get("web_query") or "tecnología").strip()
+            estado["web_query"] = (request.form.get("web_query") or "Messi").strip()
             estado["active_mod"] = "m7"
+
+        elif accion == "guardar_ajustes":
+            sel_lang = (request.form.get("idioma_sel") or "es").strip()
+            if any(c == sel_lang for c, _ in IDIOMAS_20):
+                estado["idioma"] = sel_lang
+            sel_acc = (request.form.get("acento_sel") or "#e11d48").strip()
+            if sel_acc in ("#e11d48", "#2563eb", "#059669", "#d97706"):
+                estado["acento_hex"] = sel_acc
+            try:
+                dec_val = int(request.form.get("decimales_sel", 2))
+                if dec_val in (0, 2, 4):
+                    estado["decimales"] = dec_val
+            except ValueError:
+                pass
+            estado["mostrar_grafico_hoja"] = (request.form.get("grafico_hoja_sel") != "no")
+            aviso = "Ajustes guardados."
+            estado["active_mod"] = "m8"
 
         return render_panel(codigo, estado, error_msg=error, aviso_msg=aviso)
 
-    return render_template_string(HTML_TEMPLATE, autorizado=False, error=None)
+    return render_template_string(
+        HTML_TEMPLATE,
+        autorizado=False,
+        idioma="es",
+        acento_hex="#e11d48",
+        error=None,
+    )
 
 
 @app.route("/descargar-csv")
@@ -1570,13 +1834,10 @@ def descargar_csv():
     estado = obtener_estado(codigo)
     if not estado:
         return "Código no autorizado", 403
-    ordenadas = ordenar_registros(
-        estado["registros"], estado["db_modo_orden"], estado["db_sort_by"], estado["db_sort_dir"]
-    )
     output = io.StringIO()
     writer = csv.writer(output)
     writer.writerow(["Nombre", "Valor", "Categoria", "Fecha"])
-    for r in ordenadas:
+    for r in estado["registros"]:
         writer.writerow([r["nombre"], r["valor"], r["categoria"], r["fecha"]])
     return Response(
         output.getvalue(),
